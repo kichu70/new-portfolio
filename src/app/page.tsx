@@ -2,19 +2,11 @@ import Image from "next/image";
 import "./homePage.css";
 import me from "../../public/ansifHeader.png"
 import me2 from "../../public/me2.png"
-import Ribbons from '../components/ribbons/Ribbons';
 
 export default function Home() {
   return (
     <main className="home">
-<Ribbons
-    baseThickness={4}
-    colors={["#5227FF"]}
-    speedMultiplier={0.57}
-    maxAge={500}
-    enableFade
-    enableShaderEffect={false}
-  />
+
       {/* HERO */}
       <section className="hero">
         <div className="hero-left">
