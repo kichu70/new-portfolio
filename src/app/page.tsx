@@ -20,7 +20,7 @@ export default function Home() {
 
           <div className="hero-buttons">
             <a
-              href="../../public/muhammad-ansif.pdf"
+              href="/muhammad-ansif.pdf"
               download
               className="btn primary"
             >
