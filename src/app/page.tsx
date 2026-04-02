@@ -88,7 +88,7 @@ export default function Home() {
           </div>
 
           <div className="about-buttons">
-            <a href="mailto:kiichu7034@gmail.com" className="btn primary">
+            <a onClick={()=>route.push("/contact")} className="btn primary">
               Hire Me
             </a>
 
@@ -146,7 +146,7 @@ export default function Home() {
 
         </div>
         <div className="education-section">
-      <h1 className="edu-title">Education & Internships</h1>
+      <h1 className="edu-title" id="education">Education & Internships</h1>
 
       <div className="edu-container">
         {/* Education */}
