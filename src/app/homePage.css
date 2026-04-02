@@ -268,6 +268,18 @@ body {
   text-decoration: underline;
 }
 
+
+.viewall {
+  color: #ff4d00;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.viewall:hover {
+  text-decoration: underline;
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .hero {
@@ -282,4 +294,86 @@ body {
   .about {
     flex-direction: column-reverse;
   }
+}
+
+
+
+/* ----education--------- */
+
+
+.education-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 60px 20px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edu-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.edu-container {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.edu-card {
+  background: #080e08;
+  border-radius: 15px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+  border-color: #4dff00;
+  box-shadow: 0 10px 30px rgba(77, 255, 0, 0.2);
+}
+
+.edu-card h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #4dff00;
+}
+
+.edu-card h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.edu-place {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.edu-desc {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+.edu-year {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  background: #1a1a1a;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+/* Highlight internships slightly */
+.internship {
+  border-left: 4px solid #4dff00;
 }

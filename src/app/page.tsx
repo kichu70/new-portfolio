@@ -142,7 +142,60 @@ export default function Home() {
               View Project
             </a>
           </div>
+          <h4 className="viewall"><a href="https://github.com/kichu70?tab=repositories" target="_blank"> view all </a></h4>
+
         </div>
+        <div className="education-section">
+      <h1 className="edu-title">Education & Internships</h1>
+
+      <div className="edu-container">
+        {/* Education */}
+        <div className="edu-card">
+          <h2>Bachelor of Computer Applications (BCA)</h2>
+          <h3>Calicut University</h3>
+          <p className="edu-place">KMO Arts and Science College</p>
+          <span className="edu-year">2022 – 2025</span>
+        </div>
+
+        <div className="edu-card">
+          <h2>VHSS in Software Development</h2>
+          <h3>REC Chathamangalam</h3>
+          <span className="edu-year">2020 – 2022</span>
+        </div>
+
+        {/* Internships */}
+        <h4>Internships</h4>
+        <div className="edu-card internship">
+          <h2>MERN + Next.js Intern</h2>
+          <h3>Limenzy Technology</h3>
+          <p className="edu-desc">
+            Built React & Next.js components, integrated REST APIs, and improved
+            app performance through optimized state management.
+          </p>
+          <span className="edu-year">2025</span>
+        </div>
+
+        <div className="edu-card internship">
+          <h2>MERN Stack Intern</h2>
+          <h3>ICT Technology, Cyber Park</h3>
+          <p className="edu-desc">
+            6-month full-stack internship working with MongoDB, Express, React,
+            and Node.js. Developed mini projects and a Blood Donor system.
+          </p>
+          <span className="edu-year">6 Months</span>
+        </div>
+
+        <div className="edu-card internship">
+          <h2>Cyber Security Intern</h2>
+          <h3>Red Team Hacker Academy</h3>
+          <p className="edu-desc">
+            Learned vulnerability assessment, ethical hacking, and penetration
+            testing fundamentals.
+          </p>
+          <span className="edu-year">1 year</span>
+        </div>
+      </div>
+    </div>
       </section>
     </main>
   );
