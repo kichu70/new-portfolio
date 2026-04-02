@@ -1,12 +1,13 @@
 import Image from "next/image";
 import "./homePage.css";
-import me from "../../public/ansifHeader.png"
+import me from "../../public/me.png"
 import me2 from "../../public/me2.png"
+import Navbar from "@/components/navbar/Navbar";
 
 export default function Home() {
   return (
     <main className="home">
-
+<Navbar/>
       {/* HERO */}
       <section className="hero">
         <div className="hero-left">
