@@ -72,6 +72,7 @@ body {
 
 .btn.secondary {
   border: 1px solid #444;
+  background: none;
   color: #fff;
 }
 
@@ -138,9 +139,83 @@ body {
   overflow: hidden;
 }
 
+.bar-1 {
+  background: #1a1a1a;
+  height: 8px;
+  border-radius: 6px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
 .bar div {
   height: 100%;
   background: #ff4d00;
+}
+
+/* liquid bar */
+.bar div {
+  height: 100%;
+  width: 0;
+  border-radius: 6px;
+
+  background: linear-gradient(
+    120deg,
+    #f3dabc,
+    #c37d1b,
+    #f49003,
+    #ecc3af
+  );
+
+  background-size: 200% 100%;
+  transition: width 1s ease;
+}
+
+.skill:hover .bar div {
+  width: var(--skill-width);
+  animation: liquidMove 1.5s linear infinite;
+}
+
+
+@keyframes liquidMove {
+  100% {
+    background-position: 0% 0;
+  }
+  0% {
+    background-position: 200% 0;
+  }
+}
+
+/* ------- */
+.bar-1 div {
+  height: 100%;
+  width: 0;
+  border-radius: 6px;
+
+  background: linear-gradient(
+    120deg,
+    #83ec55,
+    #4dff00,
+    #0d8b3b,
+    #4dff00
+  );
+
+  background-size: 200% 100%;
+  transition: width 1s ease;
+}
+
+.skill:hover .bar-1 div {
+  width: var(--skill-width);
+  animation: liquidMove 1.5s linear infinite;
+}
+
+
+@keyframes liquidMove {
+  100% {
+    background-position: 0% 0;
+  }
+  0% {
+    background-position: 200% 0;
+  }
 }
 
 /* PROJECTS */

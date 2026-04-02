@@ -26,6 +26,24 @@ width: 100%;
     transition: 0.3s;
     position: relative;
 }
+.navbtn-1{
+    background: none;
+    border: none;
+    font-size: large;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 20px;
+    color: azure;
+    padding: 10px 2px;
+    transition: 0.3s;
+    position: relative;
+    letter-spacing: 2px;
+}
+.navbtn-1 span{
+    color: #ff4d00;
+    font-size: 23px;
+    font-weight: 700;
+}
 .navbtn::after {
     content: "";
     position: absolute;
@@ -44,4 +62,27 @@ width: 100%;
 .navbtn:hover {
     text-shadow: 0 0 20px rgb(255, 106, 0);
     transform: scale(1.1);
+}
+/* ------- */
+.navbtn-1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #5cc615;
+    transition: width 0.5s ease;
+}
+
+.navbtn-1:hover::after {
+    width: 100%;
+}
+
+.navbtn-1:hover {
+    text-shadow: 0 0 20px rgb(150, 244, 0);
+    transform: scale(1.1);
+}
+.navbtn-1:hover  span{
+color: #5cc615;
 }
