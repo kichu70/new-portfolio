@@ -197,6 +197,13 @@ export default function Home() {
       </div>
     </div>
       </section>
+       <footer className="footer">
+        <div className="ftr">
+      <p>Built with passion for web development</p>
+      <p>Contact: kiichu7034@gmail.com</p>
+      <p>© {new Date().getFullYear()} CODER. All rights reserved.</p>
+      </div>
+    </footer>
     </main>
   );
 }

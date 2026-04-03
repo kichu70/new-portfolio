@@ -377,3 +377,18 @@ body {
 .internship {
   border-left: 4px solid #4dff00;
 }
+/* ---footer--- */
+
+.footer {
+  width: 100%;
+  padding: 50px;
+  background: #0a0a0a;
+  color: #aaa;
+  text-align: center;
+  font-size: 14px;
+}
+.ftr{
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
