@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -7,35 +7,40 @@
 }
 
 :root {
-  --bg:        #04030a;
-  --bg-card:   #080e08;
-  --bg-hover:  #0a1f0a;
-  --green-dim: #1a2e1a;
-  --green-mid: #1d9e75;
-  --green-hi:  #5dcaa5;
-  --green-pale:#9fe1cb;
-  --text-pri:  #e8f5e2;
-  --text-sec:  #4a6e4a;
-  --text-mute: #2a3e2a;
-  --font-head: 'Syne', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 14px;
+  --bg-dark:        #08080c;
+  --bg-card:        rgba(18, 17, 28, 0.7);
+  --bg-card-hover:  rgba(26, 24, 40, 0.85);
+  
+  --purple-glow:    #7b42f6;
+  --purple-neon:    #8b5cf6;
+  --purple-gradient: linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%);
+  --purple-halo:    radial-gradient(circle, rgba(123, 66, 246, 0.35) 0%, rgba(109, 40, 217, 0.15) 45%, transparent 70%);
+  
+  --border-subtle:  rgba(255, 255, 255, 0.08);
+  --border-glow:    rgba(139, 92, 246, 0.4);
+  
+  --text-main:      #ffffff;
+  --text-muted:     #9ca3af;
+  --text-subtle:    #6b7280;
+
+  --font-main:      'Plus Jakarta Sans', sans-serif;
+  --font-heading:   'Space Grotesk', sans-serif;
+  --font-mono:      'JetBrains Mono', monospace;
 }
 
 html {
   scroll-behavior: smooth;
+  background-color: #06050a;
 }
 
 body {
-  background: var(--bg);
-  color: var(--text-pri);
-  font-family: var(--font-head);
+  background: var(--bg-dark);
+  color: var(--text-main);
+  font-family: var(--font-main);
   font-size: 15px;
-  line-height: 1.7;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 a {
@@ -45,25 +50,30 @@ a {
 
 button {
   cursor: pointer;
-  font-family: var(--font-head);
+  font-family: var(--font-main);
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 ::selection {
-  background: var(--green-mid);
-  color: var(--bg);
+  background: #7c3aed;
+  color: #ffffff;
 }
 
-/* Scrollbar */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--bg);
+  background: #08080c;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--green-dim);
-  border-radius: 2px;
+  background: rgba(139, 92, 246, 0.3);
+  border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--green-mid);
+  background: rgba(139, 92, 246, 0.6);
 }
