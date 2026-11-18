@@ -59,8 +59,6 @@ export default function AboutSpotlightImage({
           unoptimized
           className="about-original-img"
           sizes="(max-width: 640px) 90vw, 420px"
-          className="about-original-img"
-          sizes="(max-width: 640px) 90vw, 420px"
         />
       </div>
     );
@@ -78,17 +76,15 @@ export default function AboutSpotlightImage({
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`relative w-full max-w-[420px] h-[520px] rounded-[24px] overflow-hidden select-none mx-auto bg-[#08080c] transition-all duration-300 ${
-        isInside
+      className={`relative w-full max-w-[420px] h-[520px] rounded-[24px] overflow-hidden select-none mx-auto bg-[#08080c] transition-all duration-300 ${isInside
           ? "border-[1.5px] border-purple-400/85 shadow-[0_25px_60px_rgba(0,0,0,0.9),0_0_45px_rgba(123,66,246,0.5)] -translate-y-1"
           : "border-[1.5px] border-white/10 shadow-[0_15px_40px_rgba(0,0,0,0.6),0_0_25px_rgba(123,66,246,0.18)] translate-y-0"
-      }`}
+        }`}
     >
       {/* 1. Base Layer: Casual photo */}
       <div
-        className={`absolute inset-0 transition-[filter] duration-300 ${
-          isInside ? "brightness-75 contrast-105 saturate-90" : "brightness-100"
-        }`}
+        className={`absolute inset-0 transition-[filter] duration-300 ${isInside ? "brightness-75 contrast-105 saturate-90" : "brightness-100"
+          }`}
       >
         <Image
           src={oneProf}
@@ -137,11 +133,10 @@ export default function AboutSpotlightImage({
 
       {/* 4. Interactive Hint Pill */}
       <div
-        className={`absolute bottom-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full bg-[#08080c]/90 backdrop-blur-md text-xs font-mono font-semibold tracking-wider whitespace-nowrap pointer-events-none flex items-center z-5 transition-all duration-300 ${
-          isInside
+        className={`absolute bottom-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full bg-[#08080c]/90 backdrop-blur-md text-xs font-mono font-semibold tracking-wider whitespace-nowrap pointer-events-none flex items-center z-5 transition-all duration-300 ${isInside
             ? "border border-purple-400/75 text-white shadow-[0_0_25px_rgba(123,66,246,0.45)]"
             : "border border-white/15 text-gray-300"
-        }`}
+          }`}
       >
         <span>{isInside ? "Formal Suit Active" : "Move cursor to reveal formal suit"}</span>
       </div>
