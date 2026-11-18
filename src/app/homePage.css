@@ -166,6 +166,32 @@
   font-weight: 500;
   margin-bottom: 6px;
   letter-spacing: 0.2px;
+  transition: all 0.35s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hero-greeting:hover,
+.hero-left-col:hover .hero-greeting {
+  color: #c4b5fd;
+  text-shadow: 0 0 16px rgba(196, 181, 253, 0.6);
+}
+
+.hero-greeting-wave {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.hero-greeting:hover .hero-greeting-wave,
+.hero-left-col:hover .hero-greeting-wave {
+  transform: rotate(20deg) scale(1.2);
+}
+
+.hero-name-big-wrap {
+  display: inline-block;
+  position: relative;
+  text-align: inherit;
 }
 
 .hero-name-big {
@@ -175,14 +201,42 @@
   line-height: 1.05;
   color: #ffffff;
   letter-spacing: -1px;
+  display: block;
+}
+
+/* Lightswind Spotlight: Only the circular area under the mouse pointer transforms smoothly */
+.spotlight-text-reveal .hero-name-big {
+  background: linear-gradient(135deg, #ffffff 0%, #e9d5ff 25%, #c084fc 55%, #a855f7 80%, #f472b6 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  animation: shimmerGradient 3s linear infinite;
 }
 
 .hero-role-desc {
   color: #9ca3af;
   margin-top: 10px;
   font-size: 14.5px;
-  max-width: 360px;
+  max-width: 380px;
   line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.hero-tech-pill {
+  display: inline-block;
+  padding: 1px 7px;
+  border-radius: 6px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: default;
+}
+
+.hero-tech-pill:hover {
+  color: #ffffff;
+  background: rgba(139, 92, 246, 0.22);
+  border: 1px solid rgba(167, 139, 250, 0.45);
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.45);
+  transform: translateY(-2px);
 }
 
 /* Center Hero Column */
@@ -238,6 +292,18 @@
   font-weight: 500;
   margin-bottom: 4px;
   letter-spacing: 0.2px;
+  transition: all 0.35s ease;
+}
+
+.hero-right-col:hover .hero-role-category {
+  color: #c4b5fd;
+  text-shadow: 0 0 15px rgba(196, 181, 253, 0.5);
+}
+
+.hero-role-title-wrap {
+  display: inline-block;
+  position: relative;
+  text-align: inherit;
 }
 
 .hero-role-title {
@@ -246,6 +312,7 @@
   font-weight: 800;
   line-height: 1.1;
   letter-spacing: -0.5px;
+  display: block;
 }
 
 .hero-role-gradient {
@@ -255,11 +322,30 @@
   -webkit-text-fill-color: transparent;
   display: block;
   animation: shimmerGradient 5s ease infinite;
+  transition: all 0.4s ease;
 }
 
 .hero-role-white {
   color: #ffffff;
   display: block;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Lightswind Spotlight: Only the circular area under the mouse pointer transforms smoothly */
+.spotlight-role-reveal .hero-role-title .hero-role-white {
+  background: linear-gradient(135deg, #ffffff 0%, #e9d5ff 35%, #c084fc 70%, #8b5cf6 100%);
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+
+.spotlight-role-reveal .hero-role-title .hero-role-gradient {
+  background: linear-gradient(135deg, #fbcfe8 0%, #c084fc 40%, #818cf8 75%, #38bdf8 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  animation: shimmerGradient 1.8s ease infinite;
 }
 
 .hero-button-group {

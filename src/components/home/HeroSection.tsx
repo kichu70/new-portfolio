@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import HeroSpotlightImage from "@/components/HeroSpotlightImage";
+import { SpotlightText } from "@/components/lightswind";
 
 export default function HeroSection() {
   return (
@@ -8,15 +9,29 @@ export default function HeroSection() {
       <div className="hero-purple-halo"></div>
 
       <div className="hero-container">
-        {/* Left Column: Greeting & Large Name */}
+        {/* Left Column: Greeting & Large Name with Spotlight Text */}
         <div className="hero-left-col">
-          <p className="hero-greeting">Hello, I&apos;m</p>
-          <h1 className="hero-name-big">
-            Muhammad<br />Ansif
-          </h1>
+          <p className="hero-greeting">
+            Hello, I&apos;m <span className="hero-greeting-wave">👋</span>
+          </p>
+
+          <SpotlightText
+            as="h1"
+            radius={85}
+            spotlightClass="spotlight-text-reveal"
+            className="hero-name-big-wrap"
+          >
+            <span className="hero-name-big">
+              Muhammad<br />Ansif
+            </span>
+          </SpotlightText>
 
           <p className="hero-role-desc">
-            Full Stack Software Engineer &bull; Ruby on Rails &bull; Next.js &bull; Node.js &bull; React
+            <span className="hero-tech-pill">Full Stack Software Engineer</span> &bull;{" "}
+            <span className="hero-tech-pill">Ruby on Rails</span> &bull;{" "}
+            <span className="hero-tech-pill">Next.js</span> &bull;{" "}
+            <span className="hero-tech-pill">Node.js</span> &bull;{" "}
+            <span className="hero-tech-pill">React</span>
           </p>
         </div>
 
@@ -25,13 +40,21 @@ export default function HeroSection() {
           <HeroSpotlightImage radius={120} />
         </div>
 
-        {/* Right Column: Developer & Software Engineer */}
+        {/* Right Column: Developer & Software Engineer with Spotlight Text */}
         <div className="hero-right-col">
           <p className="hero-role-category">Full Stack</p>
-          <h2 className="hero-role-title">
-            <span className="hero-role-gradient">Developer &amp;</span>
-            <span className="hero-role-white">Software Engineer</span>
-          </h2>
+
+          <SpotlightText
+            as="h2"
+            radius={80}
+            spotlightClass="spotlight-role-reveal"
+            className="hero-role-title-wrap"
+          >
+            <span className="hero-role-title">
+              <span className="hero-role-gradient">Developer &amp;</span>
+              <span className="hero-role-white">Software Engineer</span>
+            </span>
+          </SpotlightText>
 
           <div className="hero-button-group">
             <a
